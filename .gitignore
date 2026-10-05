@@ -1,0 +1,97 @@
+# ==========================================
+# MedIR / Information Retrieval - .gitignore
+# ==========================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Generated Models & Embeddings Cache
+# (Generated automatically by ir_engine.py on runtime)
+medical-ir/models/embeddings/*.pkl
+medical-ir/models/embeddings/*.npy
+medical-ir/models/embeddings/*.pt
+medical-ir/models/embeddings/*.bin
+medical-ir/models/embeddings/*.onnx
+!medical-ir/models/embeddings/.gitkeep
+
+# Hugging Face & Sentence Transformers Local Cache
+.cache/
+.hf_cache/
+
+# Streamlit Local Configuration & Secrets
+.streamlit/secrets.toml
+
+# Environment Variables & Local Configs
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# IDEs and Text Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Testing & Coverage Outputs
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs & Temporary Files
+*.log
+*.tmp
+*.temp
